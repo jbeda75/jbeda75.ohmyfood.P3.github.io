@@ -1,0 +1,25 @@
+.iconmenu{
+    margin-left: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    @include mobile-only(){
+        margin: 0px 38px 0px 0px;
+    }
+}
+.fas.fa-heart{
+    position: relative;
+    left: -30px;
+    opacity: 0;
+    background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover{
+        animation: heart-coloration 500ms ease-in-out forwards;
+    }
+}
+.fas.fa-check-circle{
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    transition: transform 502ms ease-in-out;
+}

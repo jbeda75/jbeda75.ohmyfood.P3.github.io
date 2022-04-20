@@ -1,0 +1,32 @@
+.fas.fa-map-marker-alt{
+    padding: 0px 20px 0px 55px;
+}
+
+.fas.fa-list-ul, .fas.fa-mobile-alt, .fas.fa-store{
+    font-size: 20px;
+    margin-left: 15px;
+    color: $naviconcolor;
+    @include mobile-only(){
+        margin-left: 20px;
+    }
+}
+.icon{
+    width: 20px;
+    font-size: 24px;
+    position: relative;
+    left: 85%;
+    top: -110px;
+    cursor: pointer;
+}
+.fas.fa-heart{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover{
+        animation: heart-coloration 500ms ease-in-out forwards;
+    }
+}

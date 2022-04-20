@@ -1,0 +1,68 @@
+.footer{
+    height: 200px;
+    background-color: $footercolor;
+    &--logo{
+        @include fontlogo();
+        font-size: 18px;
+        margin: 0px;
+        padding-top: 25px;
+        color: white;
+        @include pad-only(){
+            display: flex;
+            justify-content: center;
+        }
+        @include desktop-only(){
+            display: flex;
+            justify-content: center;
+        }
+        @include mobile-only(){
+            margin-left: 25px;
+        }
+    }
+    &--link1{
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+        @include mobile-only(){
+            margin-left: 25px;
+        }
+        &>p{
+            margin: 0px 0px 0px 15px; 
+        }
+    }
+    &--link2{
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+        @include mobile-only(){
+            margin-left: 25px;
+        }
+        &>p{
+            margin: 0px 0px 0px 15px;
+        }
+    }
+    &--link3{
+        @include font();
+        color: white;
+        &>p{
+            margin: 10px 0px 0px 50px;
+            @include mobile-only(){
+                margin-left: 25px;
+            }
+        }
+    }
+    &--link4{
+        @include font();
+        color: white;
+        &>p{
+            margin: 10px 0px 0px 50px;
+            @include mobile-only(){
+                margin-left: 25px;
+            }
+        }
+    }
+}

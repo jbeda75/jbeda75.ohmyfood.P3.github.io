@@ -1,0 +1,60 @@
+.loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $backcolor;
+    z-index: 2;
+    animation: loader 0.01s 1400ms both;
+    &--circle1{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border-top: 4px solid $primary;
+        opacity: 0;
+        animation: spinloader 1500ms ease-in-out;
+    }
+    &--circle2{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border-bottom: 4px solid $secondary;
+        opacity: 0;
+        animation: spinloader 1500ms ease-in-out;
+    }
+    &--circle3{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border-left: 4px solid $tertiary;
+        opacity: 0;
+        animation: spinloader 1500ms ease-in-out;
+    }
+    &--logo{
+        position: absolute;
+        text-align: center;
+        @include fontlogo();
+        width: 180px;
+        font-size: 28px;
+        background: linear-gradient(lighten($color: $primary, $amount: 12%), lighten($color: $secondary, $amount: 12%));
+        border-radius: 12px;
+        color: white;
+        animation: spinloaderlogo 1500ms ease-in-out 1;
+    }
+}
